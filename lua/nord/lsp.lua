@@ -5,9 +5,9 @@ local c = require("nord.colors").palette
 
 function lsp.highlights()
   return {
-    -- LspReferenceText = { bg = c.fg_gutter }, -- used for highlighting "text" references
-    -- LspReferenceRead = { bg = c.fg_gutter }, -- used for highlighting "read" references
-    -- LspReferenceWrite = { bg = c.fg_gutter }, -- used for highlighting "write" references
+    LspReferenceText = { bg = c.polar_night.bright }, -- used for highlighting "text" references
+    LspReferenceRead = { bg = c.polar_night.bright }, -- used for highlighting "read" references
+    LspReferenceWrite = { bg = c.polar_night.bright }, -- used for highlighting "write" references
 
     DiagnosticOk = { fg = c.aurora.green }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticError = { fg = c.aurora.red }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
