@@ -11,6 +11,7 @@ Table of Contents                                *nord-nvim-table-of-contents*
   - ⚙️ Configuration    |nord-nvim-🖌️-nord.nvim-⚙️-configuration|
   - 🤝 Integrations          |nord-nvim-🖌️-nord.nvim-🤝-integrations|
   - 🎉 Credits                    |nord-nvim-🖌️-nord.nvim-🎉-credits|
+2. Links                                                     |nord-nvim-links|
 
 ==============================================================================
 1. 🖌️ nord.nvim                             *nord-nvim-🖌️-nord.nvim*
@@ -57,9 +58,10 @@ PLUGIN SUPPORT ~
 - Illuminate <https://github.com/RRethy/vim-illuminate>
 - Codeium <https://github.com/Exafunction/codeium.vim>
 - Flash.nvim <https://github.com/folke/flash.nvim>
+- Glance <https://github.com/dnlhc/glance.nvim>
 
-You’re preferred plugin is missing ? Open an issue or, even better, open a
-pull request 😉.
+Your preferred plugin is missing ? Open an issue or, even better, open a pull
+request 😉.
 
 
 ⚡️ REQUIREMENTS          *nord-nvim-🖌️-nord.nvim-⚡️-requirements*
@@ -175,6 +177,24 @@ settings:
         -- ... your lualine config
       }
     }
+<
+
+dnlhc/glance.nvim ~
+
+Nord provide default options for `glance.nvim` to have a better integration:
+
+>lua
+    require("lazy").setup({
+        {
+          "dnlhc/glance.nvim",
+          opts = require("nord.plugins.glance").make_opts({
+            folds = {
+              folded = false,
+            },
+          }),
+        }
+      }
+    )
 <
 
 akinsho/bufferline.nvim ~
